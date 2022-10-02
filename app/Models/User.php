@@ -42,6 +42,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    /**
+     * Get the chirps.
+     */
     public function chirps()
     {
         return $this->hasMany(Chirp::class);
